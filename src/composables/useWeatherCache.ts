@@ -1,6 +1,6 @@
 import { getWeatherByCoordinate } from '../services/weatherService'
 
-const weatherCache = new Map<string, { data: any; timestamp: number }>()
+const weatherCache = new Map<string, { data: unknown; timestamp: number }>()
 const CACHE_TTL = 5 * 60 * 1000
 
 export async function getWeather(lat: number, lon: number) {
