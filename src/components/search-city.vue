@@ -47,11 +47,12 @@ function selectCity(city: City) {
 <template>
   <div
     class="w-full max-w-md h-[300px] bg-white rounded-2xl shadow-lg p-6 text-center">
-    <div class="flex flex-col items-center gap-2 w-full max-w-sm relative">
+    <div class="flex flex-col items-center gap-2 max-w-full relative">
       <div class="flex justify-between items-center gap-2 w-full">
         <input
           v-model="searchText"
           placeholder="Search city"
+          maxlength="20"
           class="border rounded px-3 py-2 w-full" />
         <button
           @click="searchText = ''"
